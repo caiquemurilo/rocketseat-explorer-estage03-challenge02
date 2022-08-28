@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&family=Staatliches&display=swap');
+/* FONT STYLES 
+font-family: 'Staatliches', cursive; 400;
+font-family: 'Palanquin', sans-serif; 400;
+*/
+
+:root {
+  font-size: 62.5%; /* settando tamanho padrão das fontes para 10px */
+
+  --bc-header-primary: hsl(218, 17%, 62%);
+  --bc-header-secondary: hsl(275, 18%, 79%);
+  --bc-body-primary: hsl(233, 100%, 97%);
+  --bc-images: hsl(312, 91%, 96%);
+
+  --fc-primary: hsl(232, 17%, 35%);
+  --fc-header: hsl(0, 100%, 100%);
+
+  --ff-primary: 'Staatliches', cursive;
+  --ff-secondary: 'Palanquin', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--variavelQualquer);
+}
+
+h1 {
+  font-family: var(--ff-primary);
+}
+h2 {
+  font-family: var(--ff-secondary);
+}
