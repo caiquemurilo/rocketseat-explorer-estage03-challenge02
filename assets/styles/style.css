@@ -65,7 +65,6 @@ header h1 {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  gap: 3.6rem;
   padding-block: 1.4rem 6rem;
 }
 .wrapper p {
@@ -77,6 +76,12 @@ header h1 {
   margin-bottom: 4.3rem;
   text-align: center;
   margin-inline: auto;
+}
+#produtos {
+  animation: downtop 300ms 300ms backwards;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
 }
 .produto {
   position: relative;
@@ -99,4 +104,30 @@ header h1 {
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
+  animation: topdown 800ms 300ms forwards;
+}
+
+/* ##### ANIMATION ##### */
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
